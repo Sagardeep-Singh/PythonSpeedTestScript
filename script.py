@@ -17,7 +17,8 @@ connection = db.db(
     host=config['DATABASE']['HOST'],
     username=config['DATABASE']['USERNAME'],
     password=config['DATABASE']['PASSWORD'],
-    database=config['DATABASE']['DB_NAME']
+    database=config['DATABASE']['DB_NAME'],
+    port=config['DATABASE']['PORT']
 )
 
 results = testSpeed()
